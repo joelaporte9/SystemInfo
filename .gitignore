@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 /my_env
 /__pycache__
 /notes.txt
+=======
+/my_env
+/__pycache__
+/notes.txt
+>>>>>>> SystemInfo
 /test.py
