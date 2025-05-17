@@ -2,3 +2,7 @@
 /__pycache__
 /notes.txt
 /test.py
+/Ui/__pycache__/
+/System/__pycache__/
+/testUi.py
+/testUi.ui

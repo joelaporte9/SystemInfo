@@ -171,23 +171,23 @@
      <string>User:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="ip">
+   <widget class="QLabel" name="loginSince">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>80</x>
       <y>10</y>
-      <width>111</width>
+      <width>61</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>IP:</string>
+     <string>Last Login:</string>
     </property>
    </widget>
    <widget class="QLabel" name="login">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>150</x>
       <y>10</y>
       <width>171</width>
       <height>16</height>
