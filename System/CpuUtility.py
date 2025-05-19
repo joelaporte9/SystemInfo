@@ -18,8 +18,6 @@ class cpu:
     def get_usage_percent(self):
         self.usage_percent = psutil.cpu_percent(interval=None)
         return self.usage_percent
-    
-    def get_cpu_temp():
-        return True
+  
     
 

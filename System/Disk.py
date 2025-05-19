@@ -1,4 +1,5 @@
 import psutil
+from psutil._common import bytes2human
 
 class disk:
 
@@ -13,10 +14,10 @@ class disk:
 
             usage = psutil.disk_usage(info.mountpoint)
 
-            disk_part.append(usage.total)
-            disk_part.append(usage.used)
-            disk_part.append(usage.free)
-            disk_part.append(usage.percent)
+            disk_part.append(bytes2human(usage.total))
+            disk_part.append(bytes2human(usage.used))
+            disk_part.append(bytes2human(usage.free))
+            disk_part.append(bytes2human(usage.percent))
 
         return disk_part
 
