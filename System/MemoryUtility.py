@@ -3,8 +3,9 @@ from psutil._common import bytes2human
 
 class memory:
 
-    def __init__(self, virtual_mem=None) -> list:
+    def __init__(self, virtual_mem=None, swap_mem=None) -> list:
         self.virtual_mem = virtual_mem
+        self.swap_mem = swap_mem
      
     def get_virtual_memory(self):
         virtual_mem = []
