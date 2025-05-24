@@ -8,14 +8,12 @@
 /Network/__pycache__/
 FTP/__pycache__/
 /System/*.so
-/testUi.py
-/testUi.ui
 /.vscode/
 /testSFTP.ui
 /Ui/FTP/__pycache__/
 /Ui/Network/__pycache__/
 /Ui/Processes/__pycache__/
-.gitignore
+/Ui/test.ui
 
 
 

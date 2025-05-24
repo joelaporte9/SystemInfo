@@ -1,24 +1,19 @@
-import sys
-from PySide6.QtWidgets import QApplication, QMainWindow
-from PySide6.QtCore import QFile
-from Ui.mainUi import Ui_MainWindow as mainUi
 from System.UserInfo import user
 from System.Disk import disk
 from System.MemoryUtility import memory
 
 class SystemFunc(object):
     def __init__(self, ui):
-        self.ui = mainUi()
         self.ui = ui
-
+        
 # User information
     def user_label(self):
-            login_user = user() 
-            username = login_user.get_user() 
+            login_user = user()
+            username = login_user.get_user()
             self.ui.user.setText(username)
             # clibrary = ctypes.CDLL("C:/Users/joela/OneDrive/Desktop/Programming/SystemInfo/System/Gpu.so")
             # hello = clibrary.myprint()
-        
+
     def user_login(self):
             login_date = user()
             login = login_date.get_user_login_date()
@@ -29,12 +24,12 @@ class SystemFunc(object):
             host = user_host.get_hostname()
             self.ui.hostname.setText(host)
 
-    # functions handle disk related tasks 
+    # functions handle disk related tasks
 
     def disk_partition_info(self):
             disk_part = disk()
             partition_info = disk_part.get_disk_partitions()
-            self.ui.diskDev.setText(partition_info[0])  
+            self.ui.diskDev.setText(partition_info[0])
             self.ui.diskMP.setText(partition_info[1])
 
             # Display usage informatiom
@@ -43,7 +38,7 @@ class SystemFunc(object):
             self.ui.dsikfree.setText(str(partition_info[4]))
             self.ui.perUsed.setText(str(partition_info[5]))
 
-    # functions to handle memory related tasks 
+    # functions to handle memory related tasks
 
     def virtual_memory_info(self):
             vir_mem = memory()
@@ -60,4 +55,4 @@ class SystemFunc(object):
             self.ui.smemTotal.setText(str(swap_mem_info[0]))
             self.ui.smemused.setText(str(swap_mem_info[1]))
             self.ui.smemFree.setText(str(swap_mem_info[2]))
-            self.ui.perUsed_2.setText(str(swap_mem_info[3]))
+            self.ui.perUsedSwap.setText(str(swap_mem_info[3]))
