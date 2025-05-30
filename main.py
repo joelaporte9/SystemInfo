@@ -4,6 +4,7 @@ from Ui.mainUi import Ui_MainWindow as MainUi
 from System.SystemFunctionality import SystemFunc
 from SFTP.SftpFunctionality import SftpFunc
 from Processes.ProcessesFunctionality import ProcFunc
+from Services.SerivicesFunctionality import SerFunc
 import time
 
 class MainWindow(QMainWindow):
@@ -14,14 +15,15 @@ class MainWindow(QMainWindow):
         self.sftp_func = SftpFunc(self.main_ui)
         self.system_func = SystemFunc(self.main_ui)
         self.proc_func = ProcFunc(self.main_ui)
+        self.ser_func = SerFunc(self.main_ui)
         self.main_ui.setupUi(self)
 
         # PROCESS FUNCTIONALITY 
         #self.proc_func.display_info_for_Test()
         #self.main_ui.cclear.clicked.connect(self.proc_func.clear_cache_btn)
 
-        # NETWORK FUNCTIONALITY 
-
+        # SERVICES FUNCTIONALITY 
+        self.ser_func.display_S_info_for_Test()
 
         # SYSTEM FUNCTIONALITY
         self.system_func.user_label()
