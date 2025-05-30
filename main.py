@@ -2,7 +2,7 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 from Ui.mainUi import Ui_MainWindow as MainUi
 from System.SystemFunctionality import SystemFunc
-from FTP.SftpFunctionality import SftpFunc
+from SFTP.SftpFunctionality import SftpFunc
 from Processes.ProcessesFunctionality import ProcFunc
 import time
 
@@ -13,7 +13,14 @@ class MainWindow(QMainWindow):
         self.main_ui = MainUi()
         self.sftp_func = SftpFunc(self.main_ui)
         self.system_func = SystemFunc(self.main_ui)
+        self.proc_func = ProcFunc(self.main_ui)
         self.main_ui.setupUi(self)
+
+        # PROCESS FUNCTIONALITY 
+        #self.proc_func.display_info_for_Test()
+        #self.main_ui.cclear.clicked.connect(self.proc_func.clear_cache_btn)
+
+        # NETWORK FUNCTIONALITY 
 
 
         # SYSTEM FUNCTIONALITY

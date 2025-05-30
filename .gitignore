@@ -6,11 +6,11 @@
 /System/__pycache__/
 /Processes/__pycache__/
 /Network/__pycache__/
-FTP/__pycache__/
+/SFTP/__pycache__/
 /System/*.so
 /.vscode/
 /testSFTP.ui
-/Ui/FTP/__pycache__/
+/Ui/SFTP/__pycache__/
 /Ui/Network/__pycache__/
 /Ui/Processes/__pycache__/
 /Ui/test.ui

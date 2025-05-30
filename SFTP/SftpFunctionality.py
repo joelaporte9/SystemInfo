@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QFileDialog
-from FTP.SftpSetup import SftpSetup
+from SFTP.SftpSetup import SftpSetup
 
 class SftpFunc(object):
     def __init__(self, ui):
