@@ -27,7 +27,13 @@
      <enum>Qt::LayoutDirection::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
     </property>
     <property name="elideMode">
      <enum>Qt::TextElideMode::ElideLeft</enum>
@@ -42,6 +48,9 @@
      <bool>false</bool>
     </property>
     <widget class="QWidget" name="SFTP">
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
      <attribute name="title">
       <string>SFTP</string>
      </attribute>
@@ -332,9 +341,9 @@
      <widget class="QLabel" name="connectlbl">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>260</x>
         <y>290</y>
-        <width>49</width>
+        <width>111</width>
         <height>16</height>
        </rect>
       </property>
@@ -343,248 +352,77 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="Network">
+    <widget class="QWidget" name="Services">
      <attribute name="title">
-      <string>Network</string>
+      <string>Services</string>
      </attribute>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>11</y>
+        <width>851</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Processes">
      <attribute name="title">
       <string>Processes</string>
      </attribute>
-     <widget class="Line" name="line_16">
+     <widget class="QTableWidget" name="tableWidget">
       <property name="geometry">
        <rect>
-        <x>680</x>
-        <y>0</y>
-        <width>20</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Orientation::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="Line" name="line_17">
-      <property name="geometry">
-       <rect>
-        <x>510</x>
-        <y>0</y>
-        <width>20</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Orientation::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="Line" name="line_18">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>0</y>
-        <width>20</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Orientation::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
+        <x>10</x>
         <y>10</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PID</string>
-      </property>
-     </widget>
-     <widget class="Line" name="line_7">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>0</y>
-        <width>20</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Orientation::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_38">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>10</y>
-        <width>61</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Memory %</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_39">
-      <property name="geometry">
-       <rect>
-        <x>740</x>
-        <y>10</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Executable</string>
-      </property>
-     </widget>
-     <widget class="Line" name="line_19">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>0</y>
-        <width>20</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Orientation::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_40">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>10</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Name</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_41">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>10</y>
-        <width>49</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CPU %</string>
-      </property>
-     </widget>
-     <widget class="QScrollArea" name="scrollArea">
-      <property name="geometry">
-       <rect>
-        <x>9</x>
-        <y>29</y>
         <width>861</width>
         <height>441</height>
        </rect>
       </property>
-      <property name="widgetResizable">
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="sortingEnabled">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>859</width>
-         <height>439</height>
-        </rect>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>pid</string>
        </property>
-       <widget class="Line" name="line_20">
-        <property name="geometry">
-         <rect>
-          <x>60</x>
-          <y>0</y>
-          <width>20</width>
-          <height>451</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-       </widget>
-       <widget class="Line" name="line_21">
-        <property name="geometry">
-         <rect>
-          <x>180</x>
-          <y>0</y>
-          <width>20</width>
-          <height>451</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-       </widget>
-       <widget class="Line" name="line_22">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>0</y>
-          <width>20</width>
-          <height>451</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-       </widget>
-       <widget class="Line" name="line_23">
-        <property name="geometry">
-         <rect>
-          <x>500</x>
-          <y>0</y>
-          <width>20</width>
-          <height>451</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-       </widget>
-       <widget class="Line" name="line_24">
-        <property name="geometry">
-         <rect>
-          <x>670</x>
-          <y>0</y>
-          <width>20</width>
-          <height>451</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-       </widget>
-      </widget>
+      </column>
+      <column>
+       <property name="text">
+        <string>name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>exe</string>
+       </property>
+      </column>
      </widget>
-     <widget class="QLabel" name="label_42">
+     <widget class="QPushButton" name="cclear">
       <property name="geometry">
        <rect>
-        <x>570</x>
-        <y>10</y>
-        <width>61</width>
-        <height>16</height>
+        <x>10</x>
+        <y>450</y>
+        <width>81</width>
+        <height>24</height>
        </rect>
       </property>
       <property name="text">
-       <string>Created At</string>
+       <string>Clear Cache</string>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="System">
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
      <attribute name="title">
       <string>System</string>
      </attribute>
@@ -1308,7 +1146,7 @@
      <widget class="QLabel" name="perUsed">
       <property name="geometry">
        <rect>
-        <x>780</x>
+        <x>790</x>
         <y>430</y>
         <width>49</width>
         <height>16</height>
